@@ -19,13 +19,15 @@
             <span>Mosquitos death : <span id="kill">0</span> </span>
         </div>
 
-        <div class="cronometro">Tempo restante : ?</div>
+        <div class="cronometro">Tempo restante : <span id="cronometro"></span> ?</div>
     </div>
     
 
     <script>
+
+        document.getElementById('cronometro').innerHTML = tempo;
         
-        setInterval(function(){
+        var cria_mosquito = setInterval(function(){
             posicaoRandomica()
         }, 2000)
     </script>
