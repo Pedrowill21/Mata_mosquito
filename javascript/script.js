@@ -3,7 +3,24 @@ var altura = 0;
 var largura = 0;
 var vidas = 1;
 var mostitos_mortos = 0;
-var tempo = 10;
+var tempo = 20;
+
+var cria_mosquito = 1500;
+
+var nivel = window.location.search
+nivel = nivel.replace('?','');
+
+console.log(nivel)
+
+if(nivel === 'normal') {
+     cria_mosquito = 1500;
+} else if(nivel === 'dificil'){
+    cria_mosquito = 1000;
+} else if(nivel === 'hell'){
+    cria_mosquito = 750;
+}
+
+
 
 
 function ajustaTamanhoPalcoJogo(){
